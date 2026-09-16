@@ -188,11 +188,11 @@ extension Target {
     }
 }
 
-extension Target.Dependency {
+extension Target.Dependency 
     static let aem = byName(name: .aem)
     static let core = byName(name: .core)
 
-    enum Prefixed {
+    enum Prefixed 
         static let aem = byName(name: .Prefixed.aem)
         static let basics = byName(name: .Prefixed.basics)
         static let core = byName(name: .Prefixed.core)
@@ -202,10 +202,10 @@ extension Target.Dependency {
     }
 }
 
-extension LinkerSetting {
-    static let cPlusPlusLibrary = linkedLibrary("c++")
-    static let zLibrary = linkedLibrary("z")
-    static let accelerateFramework = linkedFramework("Accelerate")
+extension LinkerSetting 
+    static let cPlusPlusLibrary = linkedLibrary
+    static let zLibrary = linkedLibrary
+    static let accelerateFramework = linkedFramework
 }
 
 enum BinarySource {
